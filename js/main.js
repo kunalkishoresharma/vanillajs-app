@@ -2,15 +2,6 @@
 ** Date : 03-12-2020
 ** Author: Kunal K S
 */
-//const items = require('./filename')
-
-//var items = require('./cart.json');
-//console.log(cart)
-//const MyLists = './cart.json';
-//import MyLists from './cart.json';
-
-//const MyItems = JSON.stringify(MyLists);
-//alert(MyItems);
 
 var productsContent = document.querySelector('#products');
 var cartBox = document.querySelector('#cart-store');
@@ -95,10 +86,7 @@ const product = {
         })
             .then(res => res.json())
             .then(res => {
-                //const result = res.filter(({ id }) => getItemFromCart.includes(id));
-                const result = res.filter((elem) => getItemFromCart.find(({ id }) => elem.id === id));
-                //var updatedQty = res.filter((o) => getItemFromCart.includes(+o.id) );
-                //console.log(updatedQty)
+                const result = res.filter((elem) => getItemFromCart.find(({ id }) => elem.id === id));      
                 let qty = 1;
                
                 if (result.length > 0) {
@@ -151,7 +139,6 @@ const product = {
     totalPrice: function () {
         let getTotalQty = 0;
         document.querySelectorAll('[id^="qtycount-"]').forEach((q) => getTotalQty += parseInt(q.value));
-        //getTotalQty = getItemFromCart.reduce((acc,curr)=> acc + curr.qty,0);
         document.querySelector('#total-qty-cart').innerText = getTotalQty;
         let grandTotal = 0;
         document.querySelectorAll('[id^="display-price-qty-"]').forEach((p) => grandTotal += parseInt(p.value));

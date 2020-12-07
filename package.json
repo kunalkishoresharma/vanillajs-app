@@ -1,0 +1,19 @@
+{
+  "name": "adobe-assignment",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kunal K S",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
+}

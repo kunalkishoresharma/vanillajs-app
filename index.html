@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>My Cart</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="main--title Font--L">Shopping Cart</h1>
+            <section class="flex main__section--top">
+                <h2 class="mt-0">All Items</h2>
+                <button class="ButtonLink ButtonLink--Primary mt-0 Button__Cart">Items (<span id="total-qty-cart">0</span>) is on your cart</button>
+            </section>
+        </div>
+    </header>
+    <main id="main-content" class="container MainContent">
+        <div class="flex product__content--wrapper">
+            <section class="dGrid" id="products">
+            </section>
+            <aside class="cart__sidebar">
+                <div class="cart__store">
+                    <h3 class="Font--M">Your Cart</h3>
+                    <div id="cart-store">
+                    </div>
+                    <div class="cart__items--overview" id="cart-total">                    
+                    </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>copyright by <a href="http://kunalks.info">Kunal K S</a></p>
+    </footer>
+</body>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+</html>
